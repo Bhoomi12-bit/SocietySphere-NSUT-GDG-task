@@ -1,0 +1,7 @@
+{
+  "name": "societysphere",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NSUT society discovery and recruitment platform",
+  "scripts": {"start": "node server.js"}
+}

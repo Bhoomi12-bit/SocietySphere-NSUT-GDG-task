@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="description" content="SocietySphere — discover NSUT's student communities and find where you belong." />
+    <title>SocietySphere — NSUT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="nav-wrap">
+        <a class="brand" href="/" data-route aria-label="SocietySphere home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+          <span class="brand-name">Society<span>Sphere</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+          <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
+          <a href="/" data-route data-nav-link="home">Home</a>
+          <a href="/societies" data-route data-nav-link="societies">Societies</a>
+          <a href="/find-your-society" data-route data-nav-link="quiz">Find Your Society</a>
+          <a href="/about" data-route data-nav-link="about">About</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Light</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div id="app" aria-live="polite"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="/" data-route><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span class="brand-name">Society<span>Sphere</span></span></a>
+          <p class="footer-tagline">Find your people.<br />Find your society.</p>
+        </div>
+        <div class="footer-links">
+          <p class="eyebrow">Navigate</p>
+          <a href="/" data-route>Home</a>
+          <a href="/societies" data-route>Societies</a>
+          <a href="/find-your-society" data-route>Find Your Society</a>
+          <a href="/about" data-route>About</a>
+        </div>
+        <div class="footer-note">
+          <p class="eyebrow">A student index for NSUT</p>
+          <p>Built for students, by students.</p>
+          <p class="source-note">Society information and branding are presented using publicly available sources.</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>NSUT · New Delhi</span><span>SocietySphere / 2026</span></div>
+    </footer>
+
+    <div class="modal-backdrop" data-modal hidden>
+      <section class="application-modal" role="dialog" aria-modal="true" aria-labelledby="application-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close application form">×</button>
+        <div data-application-body></div>
+      </section>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

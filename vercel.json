@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/societies/:id",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/societies",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/find-your-society",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {"path":"/", "title":"SocietySphere — NSUT"},
+    {"path":"/societies", "title":"Explore NSUT Societies"},
+    {"path":"/find-your-society", "title":"Find Your Society"},
+    {"path":"/about", "title":"About SocietySphere"},
+    {"path":"/societies/:id", "title":"Society detail"}
+  ]
+}
